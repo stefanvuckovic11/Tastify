@@ -1,0 +1,56 @@
+@import '../_variables';
+
+.hero {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    margin-right: 30px;
+    &__title {
+      color: #384d44;
+      font-weight: 800;
+      font-size: 60px;
+      span {
+        color: #e4c786;
+        text-transform: uppercase;
+      }
+    }
+    &__description {
+      margin-top: 30px;
+      line-height: 30px;
+    }
+    &__input {
+      margin-top: 40px;
+      input {
+        padding: 10px 15px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
+      }
+      button {
+        padding: 10px 15px;
+        border-radius: 30px;
+        background-color: $baseColor;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        margin-left: 10px;
+        cursor: pointer;
+        width: 150px;
+        font-size: 20px;
+      }
+    }
+  }
+  &__img {
+    border-radius: 20px;
+    width: 600px;
+  }
+}
