@@ -2,10 +2,15 @@
 
 .cards {
   max-width: 1200px;
-  margin: 100px auto 0;
+  margin: 25px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  a.cards__card {
+    text-decoration: none;
+  }
+
   &__card {
     width: 275px;
     border-radius: 20px;
@@ -14,6 +19,7 @@
     box-shadow: 1px 1px 10px #00000029;
     margin-bottom: 50px;
     cursor: pointer;
+    text-decoration: none;
 
     &__img {
       width: 100%;
@@ -26,6 +32,7 @@
       &__title {
         height: 30px;
         font-size: 15px;
+        color: black;
       }
 
       &__subtitle {
@@ -46,6 +53,7 @@
           border-radius: 30px;
           font-size: 13px;
         }
+
         &__time {
           color: #065259;
         }

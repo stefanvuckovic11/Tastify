@@ -46,6 +46,7 @@
   color: #384d44;
   font-weight: 800;
   font-size: 60px;
+  margin-top: -80px;
 }
 .hero__text__title span {
   color: #e4c786;
@@ -84,10 +85,13 @@
 
 .cards {
   max-width: 1200px;
-  margin: 100px auto 0;
+  margin: 25px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.cards a.cards__card {
+  text-decoration: none;
 }
 .cards__card {
   width: 275px;
@@ -97,6 +101,7 @@
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1607843137);
   margin-bottom: 50px;
   cursor: pointer;
+  text-decoration: none;
 }
 .cards__card__img {
   width: 100%;
@@ -108,6 +113,7 @@
 .cards__card__content__title {
   height: 30px;
   font-size: 15px;
+  color: black;
 }
 .cards__card__content__subtitle {
   font-size: 14px;
