@@ -1,5 +1,5 @@
 .about{
-  &__h1{
+  &__header{
     display: block;
     font-size: 2em;
     margin-block-start: 2.35em;
@@ -10,7 +10,7 @@
     font-weight: bold;
     unicode-bidi: isolate;
   }
-  &__p{
+  &__paragraph{
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;

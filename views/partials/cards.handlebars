@@ -1,26 +1,25 @@
 <section class="cards">
-    {{#each results}}
-        <a href="recipe.html?id={{id}}" class="cards__card">
-        <img
-                class="cards__card__img"
-                src="{{thumbnail_url}}"
-                alt="{{name}}"
-        />
-        <div class="cards__card__content">
-            <h3 class="cards__card__content__title">{{name}}</h3>
-            <div class="cards__card__content__info">
-                {{#if topics.[0]}}
-                    <span class="cards__card__content__info__tag">{{topics.[0].name}}</span>
-                {{/if}}
-                {{#if total_time_minutes}}
-                    <span class="cards__card__content__info__time">{{total_time_minutes}} mins</span>
-                {{else}}
-                    {{#if total_time_tier.display_tier}}
-                        <span class="cards__card__content__info__time">{{total_time_tier.display_tier}}</span>
+    {{> loader modifier="cards-loader--index-page" }}
+    <div class="cards__list">
+        {{#each results}}
+            <a href="recipe.html?id={{id}}" class="cards__card">
+            <img class="cards__card__img" src="{{thumbnail_url}}" alt="{{name}}">
+            <div class="cards__card__content">
+                <h3 class="cards__card__content__title">{{name}}</h3>
+                <div class="cards__card__content__info">
+                    {{#if topics.[0]}}
+                        <span class="cards__card__content__info__tag">{{topics.[0].name}}</span>
                     {{/if}}
-                {{/if}}
+                    {{#if total_time_minutes}}
+                        <span class="cards__card__content__info__time">{{total_time_minutes}} mins</span>
+                    {{else}}
+                        {{#if total_time_tier.display_tier}}
+                            <span class="cards__card__content__info__time">{{total_time_tier.display_tier}}</span>
+                        {{/if}}
+                    {{/if}}
+                </div>
             </div>
-        </div>
-        </a>
-    {{/each}}
+            </a>
+        {{/each}}
+    </div>
 </section>

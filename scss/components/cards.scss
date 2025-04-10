@@ -1,63 +1,72 @@
 @import '../_variables';
 
 .cards {
-  max-width: 1200px;
-  margin: 25px auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    max-width: 1200px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  a.cards__card {
-    text-decoration: none;
-  }
-
-  &__card {
-    width: 275px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 1px 1px 10px #00000029;
-    margin-bottom: 50px;
-    cursor: pointer;
-    text-decoration: none;
-
-    &__img {
-      width: 100%;
-      height: 350px;
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
     }
 
-    &__content {
-      padding: 10px;
+    &__card {
+      width: 275px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 1px 1px 10px #00000029;
+      margin-bottom: 50px;
+      cursor: pointer;
+      text-decoration: none;
 
-      &__title {
-        height: 30px;
-        font-size: 15px;
-        color: black;
+      &__img {
+        width: 100%;
+        height: 350px;
       }
 
-      &__subtitle {
-        font-size: 14px;
-        margin-top: 5px;
-      }
-
-      &__info {
+      &__content {
         display: flex;
-        margin-top: 15px;
-        justify-content: space-between;
+        padding: 10px;
+        flex-wrap: wrap;
 
-        &__tag {
-          background-color: $baseColor;
-          padding: 4px 6px;
-          color: #fff;
-          font-weight: 700;
-          border-radius: 30px;
-          font-size: 13px;
+        &__title {
+          height: 30px;
+          font-size: 15px;
+          color: black;
+
         }
 
-        &__time {
-          color: #065259;
+        &__subtitle {
+          font-size: 14px;
+          margin-top: 5px;
+        }
+
+        &__info {
+          display: flex;
+          margin-top: 15px;
+          justify-content: space-between;
+
+          &__tag {
+            background-color: $baseColor;
+            padding: 4px 6px;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 30px;
+            font-size: 13px;
+          }
+
+          &__time {
+            color: #065259;
+          }
         }
       }
     }
   }
-}
+
+
+

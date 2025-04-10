@@ -1,0 +1,20 @@
+@import '../_variables';
+
+.cards-loader {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+
+  &__gif {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+  }
+
+  &--index-page{
+    margin-top: -175px;
+  }
+}

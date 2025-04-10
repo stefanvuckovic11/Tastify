@@ -48,7 +48,7 @@
   font-size: 60px;
   margin-top: -80px;
 }
-.hero__text__title span {
+.hero__text__title__emphasize {
   color: #e4c786;
   text-transform: uppercase;
 }
@@ -59,14 +59,14 @@
 .hero__text__input {
   margin-top: 40px;
 }
-.hero__text__input input {
+.hero__text__input__searchbar {
   padding: 10px 15px;
   border-radius: 30px;
   border: none;
   font-size: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
 }
-.hero__text__input button {
+.hero__text__input__btn {
   padding: 10px 15px;
   border-radius: 30px;
   background-color: #236823;
@@ -90,11 +90,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.cards a.cards__card {
-  text-decoration: none;
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .cards__card {
   width: 275px;
+  flex-shrink: 0;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
@@ -108,7 +111,9 @@
   height: 350px;
 }
 .cards__card__content {
+  display: flex;
   padding: 10px;
+  flex-wrap: wrap;
 }
 .cards__card__content__title {
   height: 30px;
@@ -230,7 +235,7 @@
   font-size: 25px;
   color: #1b411b;
 }
-.recipe-header__facts__fact svg {
+.recipe-header__facts__fact__icon {
   width: 1em;
   height: 1em;
   margin-right: 5px;
@@ -244,7 +249,7 @@
   font-size: 16px;
 }
 
-.about__h1 {
+.about__header {
   display: block;
   font-size: 2em;
   margin-block-start: 2.35em;
@@ -255,7 +260,7 @@
   font-weight: bold;
   unicode-bidi: isolate;
 }
-.about__p {
+.about__paragraph {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -264,6 +269,23 @@
   unicode-bidi: isolate;
   margin-left: 8.3%;
   margin-top: -1.45%;
+}
+
+.cards-loader {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+.cards-loader__gif {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+.cards-loader--index-page {
+  margin-top: -175px;
 }
 
 /*# sourceMappingURL=main.css.map */
